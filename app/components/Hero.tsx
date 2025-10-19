@@ -21,46 +21,45 @@ export default function Hero() {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 py-20">
-      <div className="max-w-4xl mx-auto text-center">
+    <section className="min-h-screen flex justify-center px-4 py-16">
+      <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="space-y-8">
+          transition={{ duration: 0.8 }}>
           {/* Navigation */}
           <nav className="flex justify-center space-x-8 mb-16">
             <a
               href="#projects"
-              className="text-muted-foreground hover:text-foreground transition-colors duration-200">
+              className="text-black hover:text-gray-600 transition-colors duration-200">
               Projects
             </a>
             <a
               href="#articles"
-              className="text-muted-foreground hover:text-foreground transition-colors duration-200">
+              className="text-black hover:text-gray-600 transition-colors duration-200">
               Writing
             </a>
             <a
               href="#contact"
-              className="text-muted-foreground hover:text-foreground transition-colors duration-200">
+              className="text-black hover:text-gray-600 transition-colors duration-200">
               Contact
             </a>
           </nav>
 
           {/* Main heading */}
-          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight">
+          <h1 className="text-4xl font-bold tracking-tight">
             {/* TODO: Replace with actual name */}
             Hello, I&apos;m John.
           </h1>
 
           {/* Subtitle */}
-          <h2 className="text-2xl md:text-3xl text-muted-foreground font-medium">
+          <h2 className="text-lg md:text-xl text-slate-500 font-normal ">
             {/* TODO: Replace with actual title and location */}A Frontend
-            Developer from the UK.
+            Developer from Ireland based in Cambridge.
           </h2>
 
           {/* Description with rough notation */}
-          <div className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          <div className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mt-4 mb-8">
             {/* TODO: Replace with actual description */}I work with modern
             technologies to create exceptional user experiences. I specialize in{" "}
             {showNotation && createRoughNotation("React")},

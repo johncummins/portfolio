@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Work_Sans } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
+const workSans = Work_Sans({
   subsets: ["latin"],
-  variable: "--font-inter",
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-work-sans",
 });
 
 export const metadata: Metadata = {
@@ -48,8 +49,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={inter.variable}>
-      <body className="font-sans antialiased">{children}</body>
+    <html lang="en" className={workSans.variable}>
+      <body
+        className="font-sans antialiased bg-slate-50"
+        style={{
+          fontFamily:
+            "var(--font-work-sans), ui-sans-serif, system-ui, sans-serif",
+        }}>
+        {children}
+      </body>
     </html>
   );
 }
