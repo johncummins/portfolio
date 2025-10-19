@@ -1,110 +1,61 @@
-# John Cummins Portfolio
+# Portfolio Website
 
-A modern, minimal portfolio website inspired by [Alex Pate's design](https://alexpate.com/). Built with Next.js 15, Tailwind CSS, shadcn/ui, and Framer Motion.
+A clean, minimal portfolio site built with Next.js 15 and Tailwind CSS.
 
-## Features
+## What's included
 
-- **Modern Design**: Clean, minimal aesthetic with neutral colors and subtle blue accents
-- **Smooth Animations**: Framer Motion for scroll animations and Rough Notation for highlights
-- **Responsive**: Mobile-first design that works on all devices
-- **Fast Performance**: Optimized with Next.js 15 and minimal dependencies
-- **Accessible**: Semantic HTML and proper ARIA labels
-- **SEO Optimized**: Proper metadata and Open Graph tags
+- **Next.js 15** with App Router and TypeScript
+- **Tailwind CSS v4** for styling
+- **shadcn/ui** components (Button, Card)
+- **Framer Motion** for smooth animations
+- **Responsive design** that works on mobile and desktop
+- **Dynamic project pages** with routing
+- **SEO ready** with proper metadata
 
-## Tech Stack
+## Quick start
 
-- **Framework**: Next.js 15 with App Router
-- **Styling**: Tailwind CSS v4
-- **UI Components**: shadcn/ui
-- **Animations**: Framer Motion
-- **Highlights**: Rough Notation
-- **Icons**: Lucide React
-- **Font**: Inter
-- **Language**: TypeScript
+```bash
+npm install
+npm run dev
+```
 
-## Getting Started
+Open [http://localhost:3001](http://localhost:3001) to see it in action.
 
-1. **Install dependencies**:
+## Project structure
 
-   ```bash
-   npm install
-   ```
+```
+app/
+├── components/          # Main components
+│   ├── Hero.tsx        # Landing section
+│   ├── Projects.tsx    # Projects grid
+│   ├── Articles.tsx    # Articles list
+│   └── Footer.tsx      # Contact info
+├── data/               # Content data
+│   ├── projects.ts     # Project data
+│   └── articles.ts     # Article data
+├── projects/[slug]/    # Dynamic project pages
+└── page.tsx           # Main page
 
-2. **Run the development server**:
-
-   ```bash
-   npm run dev
-   ```
-
-3. **Open [http://localhost:3000](http://localhost:3000)** in your browser
+components/ui/          # shadcn/ui components
+lib/                   # Utilities
+public/                # Static assets
+```
 
 ## Customization
 
-### Adding Content
-
-1. **Projects**: Edit `app/data/projects.ts` to add your projects
-2. **Articles**: Edit `app/data/articles.ts` to add your articles
-3. **Personal Info**: Update the Hero component in `app/components/Hero.tsx`
-4. **Contact Info**: Update the Footer component in `app/components/Footer.tsx`
-
-### Styling
-
-- **Colors**: Modify the CSS variables in `app/globals.css`
-- **Typography**: Update the font styles in `app/globals.css`
+- **Colors**: Edit CSS variables in `app/globals.css`
+- **Typography**: Modify font styles in `app/globals.css`
 - **Components**: Customize shadcn/ui components in `components/ui/`
-
-### SEO & Metadata
-
-Update the metadata in `app/layout.tsx` with your information:
-
-- Title and description
-- Open Graph tags
-- Twitter card data
-- Social media links
-
-## Project Structure
-
-```
-portfolio/
-├── app/
-│   ├── components/          # React components
-│   │   ├── Hero.tsx        # Hero section with rough notation
-│   │   ├── Projects.tsx    # Projects grid
-│   │   ├── Articles.tsx    # Articles list
-│   │   └── Footer.tsx      # Footer with contact info
-│   ├── data/               # Data files
-│   │   ├── projects.ts     # Project data structure
-│   │   └── articles.ts     # Article data structure
-│   ├── projects/[slug]/    # Dynamic project pages
-│   │   └── page.tsx       # Project detail page
-│   ├── layout.tsx         # Root layout with metadata
-│   ├── page.tsx          # Main page
-│   └── globals.css       # Global styles
-├── components/ui/         # shadcn/ui components
-├── lib/                   # Utility functions
-│   ├── utils.ts          # General utilities
-│   └── roughNotationHelpers.ts # Rough notation config
-└── public/               # Static assets
-```
+- **SEO**: Update metadata in `app/layout.tsx`
 
 ## Deployment
 
-The easiest way to deploy is with [Vercel](https://vercel.com):
+Deploy to Vercel with one click:
 
-1. Push your code to GitHub
-2. Connect your repository to Vercel
-3. Deploy automatically
-
-## TODO Items
-
-All content placeholders are marked with `// TODO:` comments. Search for these to find what needs to be customized:
-
-- Personal information (name, title, location)
-- Project descriptions and images
-- Article content and links
-- Contact information and social links
-- About section content
+1. Push to GitHub
+2. Connect to Vercel
+3. Deploy
 
 ## License
 
-MIT License - feel free to use this template for your own portfolio!
+MIT - use it for your own portfolio!
