@@ -12,38 +12,32 @@ export default function Footer() {
         <div className="text-center space-y-12">
           {/* Social Links */}
           <div className="flex justify-center space-x-6">
-            <Button asChild variant="ghost" size="sm">
-              <a
-                href="https://github.com/johncummins"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2">
-                <Github className="h-5 w-5" />
-                GitHub
-              </a>
-            </Button>
+            <a
+              href="https://github.com/johncummins"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors duration-200">
+              <Github className="h-5 w-5" />
+              GitHub
+            </a>
 
-            <Button asChild variant="ghost" size="sm">
-              <a
-                href="https://linkedin.com/in/johncummins"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2">
-                <Linkedin className="h-5 w-5" />
-                LinkedIn
-              </a>
-            </Button>
+            <a
+              href="https://linkedin.com/in/johncummins"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors duration-200">
+              <Linkedin className="h-5 w-5" />
+              LinkedIn
+            </a>
 
-            <Button asChild variant="ghost" size="sm">
-              <a
-                href="https://medium.com/@johncummins1997"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2">
-                <ExternalLink className="h-5 w-5" />
-                Medium
-              </a>
-            </Button>
+            <a
+              href="https://medium.com/@johncummins1997"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors duration-200">
+              <ExternalLink className="h-5 w-5" />
+              Medium
+            </a>
           </div>
 
           {/* Footer Bottom */}

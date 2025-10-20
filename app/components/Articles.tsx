@@ -1,8 +1,5 @@
 "use client";
 
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { ExternalLink, Calendar, Clock } from "lucide-react";
 import { articles } from "@/app/data/articles";
 
 export default function Articles() {
@@ -16,83 +13,44 @@ export default function Articles() {
   };
 
   return (
-    <section id="articles" className="py-20 px-4 bg-muted/30">
-      <div className="max-w-4xl mx-auto">
-        <div>
-          {/* Section Header */}
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Recent Writing
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Thoughts and insights on frontend development, design, and
-              technology.
-            </p>
-          </div>
+    <section className="mt-16">
+      {/* Section Header */}
+      <h2 className="text-2xl font-medium tracking-tight mb-6">Writing</h2>
 
-          {/* Articles List */}
-          <div className="space-y-6">
-            {articles && articles.length > 0 ? (
-              articles.map((article) => (
-                <Card
-                  key={article.id}
-                  className="group hover:shadow-lg transition-all duration-300 border-0 bg-card/50 backdrop-blur-sm">
-                  <CardContent className="p-6">
-                    <div className="flex items-start justify-between mb-4">
-                      <div className="flex-1">
-                        <h3 className="text-xl font-semibold mb-2 group-hover:text-accent transition-colors">
-                          {article.title}
-                        </h3>
-                      </div>
-                      {article.url && (
-                        <Button
-                          variant="ghost"
-                          size="sm"
-                          asChild
-                          className="ml-4 h-8 w-8 p-0 hover:bg-accent/10">
-                          <a
-                            href={article.url}
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            <ExternalLink className="h-4 w-4" />
-                          </a>
-                        </Button>
-                      )}
-                    </div>
-
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center space-x-4 text-sm text-muted-foreground">
-                        <div className="flex items-center space-x-1">
-                          <Calendar className="h-4 w-4" />
-                          <span>{formatDate(article.date)}</span>
-                        </div>
-                        {article.readTime && (
-                          <div className="flex items-center space-x-1">
-                            <Clock className="h-4 w-4" />
-                            <span>{article.readTime}</span>
-                          </div>
-                        )}
-                      </div>
-
-                      <div className="flex flex-wrap gap-2">
-                        <span className="px-2 py-1 text-xs bg-muted rounded-md text-muted-foreground">
-                          {article.publishedOn}
-                        </span>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))
-            ) : (
-              <div className="text-center py-20">
-                <div className="text-muted-foreground">
-                  <h3 className="text-xl font-medium mb-2">No articles yet</h3>
-                  <p>Articles will appear here once added to the data file.</p>
-                </div>
+      {/* Articles List */}
+      <div className="divide-y divide-slate-200">
+        {articles && articles.length > 0 ? (
+          articles.map((article) => (
+            <a
+              key={article.id}
+              className="flex flex-col gap-4 py-8 first:pt-0"
+              href={article.url}
+              target="_blank"
+              rel="noopener noreferrer">
+              <div className="flex flex-col">
+                <h2 className="font-semibold text-2xl tracking-tight">
+                  {article.title}
+                </h2>
+                <span className="text-slate-500 text-sm tracking-tight font-mono block mt-2">
+                  Published on{" "}
+                  <time dateTime={article.date}>
+                    {formatDate(article.date)}
+                  </time>
+                </span>
+                <p className="mt-2 text-slate-700 text-base">
+                  {article.readTime} • {article.publishedOn}
+                </p>
               </div>
-            )}
+            </a>
+          ))
+        ) : (
+          <div className="text-center py-20">
+            <div className="text-muted-foreground">
+              <h3 className="text-xl font-medium mb-2">No articles yet</h3>
+              <p>Articles will appear here once added to the data file.</p>
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </section>
   );

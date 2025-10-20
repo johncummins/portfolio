@@ -5,7 +5,7 @@ export default function ContactPage() {
     <PageLayout>
       <article>
         <header className="space-y-8">
-          <h1 className="text-4xl font-bold tracking-tight">Contact</h1>
+          <h1 className="text-4xl font-semibold tracking-tight">Contact</h1>
           <p className="text-lg text-muted-foreground max-w-2xl">
             Get in touch to discuss your next project.
           </p>
@@ -14,7 +14,7 @@ export default function ContactPage() {
         <section className="mt-16 space-y-8">
           <div className="grid md:grid-cols-2 gap-8">
             <section>
-              <h2 className="text-2xl font-semibold mb-4">Get in Touch</h2>
+              <h2 className="text-2xl font-medium mb-4">Get in Touch</h2>
               <p className="text-muted-foreground mb-6">
                 I'm always interested in new opportunities and collaborations.
                 Whether you have a project in mind or just want to chat about
@@ -31,7 +31,7 @@ export default function ContactPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-4">Connect</h2>
+              <h2 className="text-2xl font-medium mb-4">Connect</h2>
               <nav className="space-y-4" aria-label="Social media links">
                 <div>
                   <p className="text-sm text-muted-foreground">LinkedIn</p>
