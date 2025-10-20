@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, ExternalLink } from "lucide-react";
 
@@ -10,42 +9,7 @@ export default function Footer() {
   return (
     <footer id="contact" className="py-20 px-4">
       <div className="max-w-4xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="text-center space-y-12">
-          {/* About Section */}
-          <div className="space-y-6">
-            <h2 className="text-3xl md:text-4xl font-bold">
-              Let&apos;s work together
-            </h2>
-
-            <div className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              {/* TODO: Replace with actual about text */}
-              <p>
-                I&apos;m passionate about creating exceptional user experiences
-                through clean code and thoughtful design. Whether you&apos;re
-                looking to build a new product or improve an existing one,
-                I&apos;d love to hear about your project.
-              </p>
-            </div>
-
-            {/* Contact Button */}
-            <div className="pt-4">
-              <Button
-                asChild
-                size="lg"
-                className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-3 text-lg font-medium">
-                <a href="mailto:john@example.com">
-                  {/* TODO: Replace with actual email */}
-                  Get in touch
-                </a>
-              </Button>
-            </div>
-          </div>
-
+        <div className="text-center space-y-12">
           {/* Social Links */}
           <div className="flex justify-center space-x-6">
             <Button asChild variant="ghost" size="sm">
@@ -72,7 +36,7 @@ export default function Footer() {
 
             <Button asChild variant="ghost" size="sm">
               <a
-                href="https://medium.com/@johncummins"
+                href="https://medium.com/@johncummins1997"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2">
@@ -101,7 +65,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </footer>
   );
