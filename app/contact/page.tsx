@@ -16,9 +16,9 @@ export default function ContactPage() {
             <section>
               <h2 className="text-2xl font-medium mb-4">Get in Touch</h2>
               <p className="text-muted-foreground mb-6">
-                I'm always interested in new opportunities and collaborations.
-                Whether you have a project in mind or just want to chat about
-                frontend development, feel free to reach out.
+                I&apos;m always interested in new opportunities and
+                collaborations. Whether you have a project in mind or just want
+                to chat about frontend development, feel free to reach out.
               </p>
               <address className="space-y-2 not-italic">
                 <p className="text-sm text-muted-foreground">Email</p>

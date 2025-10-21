@@ -13,14 +13,21 @@ export const RoughNotationWrapper = ({
   delay?: number;
 }) => {
   const ref = useRef<HTMLSpanElement>(null);
-  const annotationRef = useRef<any>(null);
+  const annotationRef = useRef<ReturnType<typeof annotate> | null>(null);
 
   useEffect(() => {
     if (ref.current && show && !annotationRef.current) {
       const timer = setTimeout(() => {
         try {
-          annotationRef.current = annotate(ref.current, {
-            type: type as any,
+          annotationRef.current = annotate(ref.current!, {
+            type: type as
+              | "highlight"
+              | "underline"
+              | "box"
+              | "circle"
+              | "strike-through"
+              | "crossed-off"
+              | "bracket",
             color: "#64748b20", // Very light slate-500 with low opacity for subtle effect
             strokeWidth: 2,
             padding: 4,

@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
 import PageLayout from "../components/PageLayout";
 import { RoughNotationWrapper } from "@/lib/roughNotationHelpers";
 
@@ -48,9 +47,9 @@ export default function About() {
           </p>
 
           <p className="mb-6">
-            When I'm not coding, you can find me exploring new technologies,
-            contributing to open-source projects, or sharing knowledge with the
-            developer community.
+            When I&apos;m not coding, you can find me exploring new
+            technologies, contributing to open-source projects, or sharing
+            knowledge with the developer community.
           </p>
         </section>
 
