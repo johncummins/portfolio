@@ -23,9 +23,23 @@ export default function ContactPage() {
               <address className="space-y-2 not-italic">
                 <p className="text-sm text-muted-foreground">Email</p>
                 <a
-                  href="mailto:hello@johncummins.dev"
+                  href="mailto:johncummins1997@gmail.com"
                   className="text-black hover:text-gray-600 transition-colors">
-                  hello@johncummins.dev
+                  johncummins1997@gmail.com
+                </a>
+                <p className="text-sm text-muted-foreground mt-4">Phone</p>
+                <a
+                  href="tel:+447846136013"
+                  className="text-black hover:text-gray-600 transition-colors">
+                  +44 7846 13 6013
+                </a>
+                <p className="text-sm text-muted-foreground mt-4">Website</p>
+                <a
+                  href="http://johncummins.info"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-black hover:text-gray-600 transition-colors">
+                  johncummins.info
                 </a>
               </address>
             </section>
@@ -36,31 +50,11 @@ export default function ContactPage() {
                 <div>
                   <p className="text-sm text-muted-foreground">LinkedIn</p>
                   <a
-                    href="https://linkedin.com/in/johncummins"
+                    href="https://linkedin.com/in/johncummins3"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-black hover:text-gray-600 transition-colors">
-                    linkedin.com/in/johncummins
-                  </a>
-                </div>
-                <div>
-                  <p className="text-sm text-muted-foreground">GitHub</p>
-                  <a
-                    href="https://github.com/johncummins"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-black hover:text-gray-600 transition-colors">
-                    github.com/johncummins
-                  </a>
-                </div>
-                <div>
-                  <p className="text-sm text-muted-foreground">Twitter</p>
-                  <a
-                    href="https://twitter.com/johncummins"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-black hover:text-gray-600 transition-colors">
-                    @johncummins
+                    linkedin.com/in/johncummins3
                   </a>
                 </div>
                 <div>

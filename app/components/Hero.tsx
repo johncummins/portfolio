@@ -24,7 +24,7 @@ export default function Hero() {
         </h1>
 
         <h2 className="text-2xl text-slate-500 font-normal ">
-          {/* TODO: Replace with actual title and location */}A{" "}
+          A{" "}
           <RoughNotationWrapper show={showNotation} delay={0}>
             Frontend Developer
           </RoughNotationWrapper>{" "}
@@ -34,9 +34,10 @@ export default function Hero() {
 
       {/* Description Section */}
       <section className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed mt-4 mb-8">
-        {/* TODO: Replace with actual description */}I work with modern
-        technologies to create exceptional user experiences. I specialize in
-        React , UI Design , and Performance optimization.
+        Frontend developer with 4 years' experience in a fast-paced startup,
+        building scalable, high-quality applications with JavaScript, React, and
+        Next.js using modern tools like TanStack Query, Zustand and Tailwind
+        CSS.
         <div className="mt-6">
           <Link href="/about">
             <Button className="text-base bg-black text-white hover:bg-gray-800">
@@ -48,5 +49,3 @@ export default function Hero() {
     </>
   );
 }
-
-
