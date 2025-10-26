@@ -40,8 +40,21 @@ export default function Hero() {
         CSS.
         <div className="mt-6">
           <Link href="/about">
-            <Button className="text-base bg-black text-white hover:bg-gray-800 cursor-pointer">
+            <Button className="text-base bg-black text-white hover:bg-gray-800 cursor-pointer group">
               Learn more about me
+              <svg
+                className="ml-2 w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M13 7l5 5m0 0l-5 5m5-5H6"
+                />
+              </svg>
             </Button>
           </Link>
         </div>

@@ -30,7 +30,7 @@ export default function ProjectDetail({
           <Link
             href="/"
             className="text-sm text-muted-foreground hover:text-gray-600 transition-colors mb-4 inline-block">
-            ← Back to projects
+            ← Back
           </Link>
 
           <h1 className="text-4xl font-semibold tracking-tight mb-4">
@@ -101,7 +101,7 @@ export default function ProjectDetail({
         <div className="max-w-4xl space-y-8">
           {/* Tech Stack */}
           <section>
-            <h3 className="text-lg font-medium tracking-tight mb-3">
+            <h3 className="text-2xl font-medium tracking-tight mb-3">
               Tech Stack
             </h3>
             <div className="flex flex-wrap gap-2">
@@ -117,9 +117,21 @@ export default function ProjectDetail({
 
           {/* Main Content - About */}
           <section>
-            <h3 className="text-lg font-medium tracking-tight mb-3">About</h3>
-            <div className="text-lg md:text-xl text-muted-foreground leading-relaxed whitespace-pre-line">
-              {project.longDescription}
+            <h3 className="text-2xl font-medium tracking-tight mb-3">About</h3>
+            <div className="text-lg md:text-xl text-black leading-relaxed whitespace-pre-line">
+              {project.longDescription
+                .split("Key features")
+                .map((part, index) => {
+                  if (index === 0) return part;
+                  return (
+                    <span key={index}>
+                      <span className="font-medium text-muted-foreground">
+                        Key features
+                      </span>
+                      {part}
+                    </span>
+                  );
+                })}
             </div>
           </section>
         </div>

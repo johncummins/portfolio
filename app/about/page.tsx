@@ -1,6 +1,8 @@
 "use client";
 
 import PageLayout from "../components/PageLayout";
+import Link from "next/link";
+import { projects } from "../data/projects";
 
 export default function About() {
   return (
@@ -14,7 +16,7 @@ export default function About() {
         </header>
 
         {/* Profile Section */}
-        <section className="text-lg md:text-xl text-black max-w-2xl leading-relaxed mt-4 mb-8">
+        <section className="text-lg text-black max-w-2xl leading-relaxed mt-4 mb-8">
           <p className="mb-6">
             Frontend developer with 4 years&apos; experience in a fast-paced
             startup, building scalable, high-quality applications with
@@ -49,10 +51,10 @@ export default function About() {
               <h3 className="text-lg font-medium text-slate-700 mb-1">
                 Frontend Developer
               </h3>
-              <p className="text-sm text-slate-500 mb-1">
+              <p className="text-lg text-slate-500 mb-1">
                 cThings, Cambridge, UK (2022 - Present)
               </p>
-              <ul className="space-y-2 text-black">
+              <ul className="space-y-2 text-lg text-black">
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
                   <span>
@@ -152,6 +154,47 @@ export default function About() {
               </p>
               <p className="text-sm text-slate-500">2016 - 2020</p>
             </div>
+          </div>
+        </section>
+
+        {/* Personal Projects Section */}
+        <section className="mt-16 mb-16">
+          <h2 className="text-2xl font-medium tracking-tight mb-6">
+            Personal Projects
+          </h2>
+
+          <div className="space-y-8">
+            {projects
+              .filter((project) => project.featured)
+              .map((project) => (
+                <Link
+                  key={project.id}
+                  href={`/projects/${project.id}`}
+                  className="group block">
+                  <div className="pb-2">
+                    <div className="flex items-center justify-between">
+                      <h3 className="text-lg font-medium text-black group-hover:text-slate-700 transition-colors">
+                        {project.title}
+                      </h3>
+                      <svg
+                        className="ml-4 w-4 h-4 text-slate-400 group-hover:text-slate-600 transition-all duration-300 group-hover:translate-x-1 flex-shrink-0"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </div>
+                    <p className="text-muted-foreground mt-1">
+                      {project.description}
+                    </p>
+                  </div>
+                </Link>
+              ))}
           </div>
         </section>
       </article>
