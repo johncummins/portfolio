@@ -7,6 +7,7 @@ export interface Project {
   techStack: string[];
   liveUrl?: string;
   githubUrl?: string;
+  appStoreUrl?: string;
   featured: boolean;
   date: string;
 }
@@ -20,8 +21,14 @@ export const projects: Project[] = [
     longDescription:
       "Cambridge Bin Collection is a React Native mobile app that helps Cambridge residents track their bin collection schedules with timely reminders. The app fetches real-time bin schedules from the Cambridge City Council API and implements local notifications to provide timely reminders, improving user engagement.\n\nBuilt with a focus on responsive, intuitive UI with smooth flows, the app enhances accessibility and usability for Cambridge residents. The project solves a real local problem by ensuring residents never miss a collection and always put out the right bins.\n\nKey features include:\n- Real-time bin schedules from Cambridge City Council API\n- Local notifications for timely reminders\n- Responsive, intuitive UI\n- Smooth user flows",
     image: "/images/projects/camrbidge-bins.png",
-    techStack: ["React Native", "JavaScript", "Local Notifications"],
-    liveUrl: "",
+    techStack: [
+      "React Native",
+      "JavaScript",
+      "Gluestack UI",
+      "Local Notifications",
+    ],
+    liveUrl: "https://cambridge-bins.vercel.app/",
+    appStoreUrl: "https://apps.apple.com/gb/app/cambridge-bins/id6753903230",
     githubUrl: "",
     featured: true,
     date: "2025-02-01",
@@ -41,7 +48,7 @@ export const projects: Project[] = [
       "eBay API",
       "Tailwind CSS",
     ],
-    liveUrl: "",
+    liveUrl: "https://find-my-bike-sigma.vercel.app/",
     githubUrl: "",
     featured: true,
     date: "2025-09-01",

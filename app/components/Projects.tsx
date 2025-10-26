@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { projects } from "@/app/data/projects";
 
 export default function Projects() {
@@ -11,18 +12,10 @@ export default function Projects() {
           {projects
             .filter((project) => project.featured)
             .map((project) => (
-              <a
+              <Link
                 key={project.id}
-                className="flex flex-col justify-center bg-slate-100 hover:bg-slate-200/70 transition-colors rounded-xl p-8 w-full"
-                href={project.liveUrl || project.githubUrl || "#"}
-                target={
-                  project.liveUrl || project.githubUrl ? "_blank" : undefined
-                }
-                rel={
-                  project.liveUrl || project.githubUrl
-                    ? "noopener noreferrer"
-                    : undefined
-                }>
+                href={`/projects/${project.id}`}
+                className="flex flex-col justify-center bg-slate-100 hover:bg-slate-200/70 transition-colors rounded-xl p-8 w-full">
                 <div className="relative rounded-xl mb-4 box-shadow-project w-full">
                   <Image
                     alt={project.title}
@@ -38,7 +31,7 @@ export default function Projects() {
                 <h3 className="text-slate-500 text-base">
                   {project.description}
                 </h3>
-              </a>
+              </Link>
             ))}
         </div>
       )}

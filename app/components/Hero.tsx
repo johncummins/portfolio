@@ -40,7 +40,7 @@ export default function Hero() {
         CSS.
         <div className="mt-6">
           <Link href="/about">
-            <Button className="text-base bg-black text-white hover:bg-gray-800">
+            <Button className="text-base bg-black text-white hover:bg-gray-800 cursor-pointer">
               Learn more about me
             </Button>
           </Link>
