@@ -34,10 +34,10 @@ export default function Hero() {
 
       {/* Description Section */}
       <section className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed mt-4 mb-8">
-        Frontend developer with 4 years' experience in a fast-paced startup,
-        building scalable, high-quality applications with JavaScript, React, and
-        Next.js using modern tools like TanStack Query, Zustand and Tailwind
-        CSS.
+        Frontend developer with 4 years&apos; experience in a fast-paced
+        startup, building scalable, high-quality applications with JavaScript,
+        React, and Next.js using modern tools like TanStack Query, Zustand and
+        Tailwind CSS.
         <div className="mt-6">
           <Link href="/about">
             <Button className="text-base bg-black text-white hover:bg-gray-800 cursor-pointer">
