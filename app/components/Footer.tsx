@@ -2,43 +2,48 @@
 
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, ExternalLink } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const pathname = usePathname();
+  const isContactPage = pathname === "/contact";
 
   return (
     <footer id="contact" className="py-8 px-4">
       <div className="max-w-4xl mx-auto">
         <div className="text-center space-y-8">
-          {/* Social Links */}
-          <div className="flex justify-center space-x-6">
-            <a
-              href="https://github.com/johncummins"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors duration-200">
-              <Github className="h-5 w-5" />
-              GitHub
-            </a>
+          {/* Social Links - Hidden on contact page */}
+          {!isContactPage && (
+            <div className="flex justify-center space-x-6">
+              <a
+                href="https://github.com/johncummins"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors duration-200">
+                <Github className="h-5 w-5" />
+                GitHub
+              </a>
 
-            <a
-              href="https://linkedin.com/in/johncummins3"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors duration-200">
-              <Linkedin className="h-5 w-5" />
-              LinkedIn
-            </a>
+              <a
+                href="https://linkedin.com/in/johncummins3"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors duration-200">
+                <Linkedin className="h-5 w-5" />
+                LinkedIn
+              </a>
 
-            <a
-              href="https://medium.com/@johncummins1997"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors duration-200">
-              <ExternalLink className="h-5 w-5" />
-              Medium
-            </a>
-          </div>
+              <a
+                href="https://medium.com/@johncummins1997"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors duration-200">
+                <ExternalLink className="h-5 w-5" />
+                Medium
+              </a>
+            </div>
+          )}
 
           {/* Footer Bottom */}
           <div className="pt-8 border-t border-border">

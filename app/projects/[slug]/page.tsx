@@ -118,7 +118,7 @@ export default function ProjectDetail({
           {/* Main Content - About */}
           <section>
             <h3 className="text-lg font-medium tracking-tight mb-3">About</h3>
-            <div className="text-muted-foreground whitespace-pre-line">
+            <div className="text-lg md:text-xl text-muted-foreground leading-relaxed whitespace-pre-line">
               {project.longDescription}
             </div>
           </section>
