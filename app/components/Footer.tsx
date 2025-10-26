@@ -7,9 +7,9 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer id="contact" className="py-20 px-4">
+    <footer id="contact" className="py-8 px-4">
       <div className="max-w-4xl mx-auto">
-        <div className="text-center space-y-12">
+        <div className="text-center space-y-8">
           {/* Social Links */}
           <div className="flex justify-center space-x-6">
             <a
@@ -22,7 +22,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="https://linkedin.com/in/johncummins"
+              href="https://linkedin.com/in/johncummins3"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors duration-200">
@@ -46,16 +46,14 @@ export default function Footer() {
               <div>© {currentYear} John Cummins</div>
 
               <div className="flex items-center gap-4">
-                <Button asChild variant="ghost" size="sm">
-                  <a
-                    href="https://github.com/johncummins/portfolio"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-1 text-xs">
-                    <Github className="h-3 w-3" />
-                    View Source
-                  </a>
-                </Button>
+                <a
+                  href="https://github.com/johncummins/portfolio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors duration-200">
+                  <Github className="h-3 w-3" />
+                  View Source
+                </a>
               </div>
             </div>
           </div>

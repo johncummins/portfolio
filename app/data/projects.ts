@@ -33,7 +33,7 @@ export const projects: Project[] = [
       "A Next.js web app that integrates with the eBay API to locate stolen bikes by matching uploaded images.",
     longDescription:
       "Find My Bike is a Next.js web application that helps bike owners locate their stolen bikes by matching uploaded images with listings on eBay. The app integrates with the eBay API to search for matching bikes and implements daily notifications to keep users informed of new matches.\n\nThe application features a modern UI built with shadcn/ui, based on Radix principles for accessible, consistent user interactions. Users can upload an image of their stolen bike, and the system automatically searches eBay for potential matches, sending notifications when new listings appear.\n\nKey features include:\n- eBay API integration for bike matching\n- Image upload and matching functionality\n- Daily notification system for new matches\n- Modern UI with shadcn/ui components\n- Accessible design based on Radix principles",
-    image: "/next.svg",
+    image: "/images/projects/find-my-bike.png",
     techStack: [
       "Next.js",
       "TypeScript",

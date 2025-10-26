@@ -7,7 +7,7 @@ export default function Projects() {
       <h2 className="text-2xl font-medium tracking-tight mb-6">Projects</h2>
 
       {projects.length > 0 && (
-        <div className="space-y-6">
+        <div className="space-y-12">
           {projects
             .filter((project) => project.featured)
             .map((project) => (
