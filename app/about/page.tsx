@@ -52,7 +52,7 @@ export default function About() {
               <p className="text-sm text-slate-500 mb-1">
                 cThings, Cambridge, UK (2022 - Present)
               </p>
-              <ul className="space-y-2 text-muted-foreground">
+              <ul className="space-y-2 text-black">
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
                   <span>
@@ -94,7 +94,7 @@ export default function About() {
 
           <div className="space-y-6">
             <div>
-              <h3 className="text-lg font-medium text-slate-700 mb-1">
+              <h3 className="text-lg font-medium text-black mb-1">
                 Frontend Development
               </h3>
               <p className="text-muted-foreground">
@@ -104,7 +104,7 @@ export default function About() {
             </div>
 
             <div>
-              <h3 className="text-lg font-medium text-slate-700 mb-1">
+              <h3 className="text-lg font-medium text-black mb-1">
                 Libraries & Frameworks
               </h3>
               <p className="text-muted-foreground">
@@ -114,7 +114,7 @@ export default function About() {
             </div>
 
             <div>
-              <h3 className="text-lg font-medium text-slate-700 mb-1">
+              <h3 className="text-lg font-medium text-black mb-1">
                 Data Fetching & State Management
               </h3>
               <p className="text-muted-foreground">
@@ -123,7 +123,7 @@ export default function About() {
             </div>
 
             <div>
-              <h3 className="text-lg font-medium text-slate-700 mb-1">
+              <h3 className="text-lg font-medium text-black mb-1">
                 Testing & Tools
               </h3>
               <p className="text-muted-foreground">

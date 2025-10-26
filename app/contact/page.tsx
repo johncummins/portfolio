@@ -6,7 +6,7 @@ export default function ContactPage() {
       <article>
         <header className="space-y-8">
           <h1 className="text-4xl font-semibold tracking-tight">Contact</h1>
-          <p className="text-lg text-muted-foreground max-w-2xl">
+          <p className="text-lg text-black max-w-2xl">
             I&apos;m always interested in new opportunities and collaborations.
             Whether you have a project in mind or just want to chat about
             frontend development, feel free to reach out.

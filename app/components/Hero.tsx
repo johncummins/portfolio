@@ -33,7 +33,7 @@ export default function Hero() {
       </header>
 
       {/* Description Section */}
-      <section className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed mt-4 mb-8">
+      <section className="text-lg md:text-xl text-black max-w-2xl leading-relaxed mt-4 mb-8">
         Frontend developer with 4 years&apos; experience in a fast-paced
         startup, building scalable, high-quality applications with JavaScript,
         React, and Next.js using modern tools like TanStack Query, Zustand and
