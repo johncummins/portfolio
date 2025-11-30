@@ -9,7 +9,7 @@ const workSans = Work_Sans({
   variable: "--font-work-sans",
 });
 
-const description = `${JOB_TITLE} based in Cambridge, UK specializing in UI Design and Performance optimization.`;
+const description = `${JOB_TITLE} based in Cambridge, UK. I’m passionate about creating intuitive, performant user interfaces and exploring new frontend technologies.`;
 
 export const metadata: Metadata = {
   title: `John Cummins - ${JOB_TITLE}`,

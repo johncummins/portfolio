@@ -115,23 +115,23 @@ export default function ProjectDetail({
             </div>
           </section>
 
+          {/* Why I Built This */}
+          {project.motivation && (
+            <section>
+              <h3 className="text-2xl font-medium tracking-tight mb-3">
+                Why I Built {project.title}
+              </h3>
+              <p className="text-lg md:text-xl text-black leading-relaxed">
+                {project.motivation}
+              </p>
+            </section>
+          )}
+
           {/* Main Content - About */}
           <section>
             <h3 className="text-2xl font-medium tracking-tight mb-3">About</h3>
             <div className="text-lg md:text-xl text-black leading-relaxed whitespace-pre-line">
-              {project.longDescription
-                .split("Key features")
-                .map((part, index) => {
-                  if (index === 0) return part;
-                  return (
-                    <span key={index}>
-                      <span className="font-medium text-muted-foreground">
-                        Key features
-                      </span>
-                      {part}
-                    </span>
-                  );
-                })}
+              {project.longDescription}
             </div>
           </section>
         </div>
