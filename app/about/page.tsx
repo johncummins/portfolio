@@ -50,7 +50,7 @@ export default function About() {
           <div className="space-y-6">
             <div>
               <h3 className="text-lg font-medium text-slate-700 mb-1">
-                {JOB_TITLE}
+                Frontend Engineer
               </h3>
               <p className="text-lg text-slate-500 mb-1">
                 cThings, Cambridge, UK (2022 - Present)
@@ -67,16 +67,17 @@ export default function About() {
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
                   <span>
-                    Build interactive dashboards and data visualisations (React
-                    Flow, Highcharts) to monitor 146,000+ IoT devices, with a
-                    focus on writing clean, readable, and maintainable code.
+                    Developed a React Native Android kiosk app for secure
+                    Tap-to-Pay payments using Stripe and NFC/RFID meter top-ups,
+                    supporting 6,000 service points.
                   </span>
                 </li>
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
                   <span>
-                    Collaborate with directors and backend team to ensure
-                    smooth, reliable feature delivery for customers.
+                    Build interactive dashboards and data visualisations (React
+                    Flow, Highcharts) to monitor 146,000+ IoT devices, with a
+                    focus on writing clean, readable, and maintainable code.
                   </span>
                 </li>
                 <li className="flex items-start">
@@ -103,6 +104,16 @@ export default function About() {
               <p className="text-muted-foreground">
                 JavaScript (ES6+), TypeScript, HTML5, CSS3, Responsive Web
                 Design
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-medium text-black mb-1">
+                Mobile Development
+              </h3>
+              <p className="text-muted-foreground">
+                React Native (Expo & Bare), Xcode, Android Studio, foundational
+                Java experience
               </p>
             </div>
 

@@ -25,7 +25,6 @@ export default function Hero() {
         </h1>
 
         <h2 className="text-2xl text-slate-500 font-normal ">
-          A{" "}
           <RoughNotationWrapper show={showNotation} delay={0}>
             {JOB_TITLE}
           </RoughNotationWrapper>{" "}
@@ -36,7 +35,7 @@ export default function Hero() {
       {/* Description Section */}
       <section className="text-lg md:text-xl text-black max-w-2xl leading-relaxed mt-4 mb-8">
         With 4 years&apos; experience in a fast-paced startup, I specialize in
-        building scalable, high-quality applications using React Native and
+        building scalable, high-quality applications with React Native and
         Next.js using modern tools like TanStack Query, Zustand and Tailwind
         CSS.
         <div className="mt-6">

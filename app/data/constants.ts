@@ -1,1 +1,1 @@
-export const JOB_TITLE = "Frontend and Mobile Engineer";
+export const JOB_TITLE = "Frontend & Mobile Engineer";
