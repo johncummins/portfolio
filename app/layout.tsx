@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Work_Sans } from "next/font/google";
 import "./globals.css";
+import { JOB_TITLE } from "./data/constants";
 
 const workSans = Work_Sans({
   subsets: ["latin"],
@@ -8,14 +9,14 @@ const workSans = Work_Sans({
   variable: "--font-work-sans",
 });
 
+const description = `${JOB_TITLE} based in Cambridge, UK specializing in UI Design and Performance optimization.`;
+
 export const metadata: Metadata = {
-  title: "John Cummins - Frontend Developer",
-  description:
-    "Frontend Developer from the UK specializing in React, UI Design, and Performance optimization.",
+  title: `John Cummins - ${JOB_TITLE}`,
+  description: description,
   openGraph: {
-    title: "John Cummins - Frontend Developer",
-    description:
-      "Frontend Developer from the UK specializing in React, UI Design, and Performance optimization.",
+    title: `John Cummins - ${JOB_TITLE}`,
+    description: description,
     url: "https://johncummins.dev",
     siteName: "John Cummins Portfolio",
   },

@@ -3,6 +3,7 @@
 import PageLayout from "../components/PageLayout";
 import Link from "next/link";
 import { projects } from "../data/projects";
+import { JOB_TITLE } from "../data/constants";
 
 export default function About() {
   return (
@@ -18,10 +19,10 @@ export default function About() {
         {/* Profile Section */}
         <section className="text-lg text-black max-w-2xl leading-relaxed mt-4 mb-8">
           <p className="mb-6">
-            Frontend developer with 4 years&apos; experience in a fast-paced
-            startup, building scalable, high-quality applications with
-            JavaScript, React, and Next.js using modern tools like TanStack
-            Query, Zustand and Tailwind CSS.
+            {JOB_TITLE} with 4 years&apos; experience in a fast-paced startup,
+            building scalable, high-quality applications with JavaScript, React,
+            and Next.js using modern tools like TanStack Query, Zustand and
+            Tailwind CSS.
           </p>
 
           <p className="mb-6">
@@ -49,7 +50,7 @@ export default function About() {
           <div className="space-y-6">
             <div>
               <h3 className="text-lg font-medium text-slate-700 mb-1">
-                Frontend Developer
+                {JOB_TITLE}
               </h3>
               <p className="text-lg text-slate-500 mb-1">
                 cThings, Cambridge, UK (2022 - Present)

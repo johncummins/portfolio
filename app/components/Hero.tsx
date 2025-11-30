@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { RoughNotationWrapper } from "@/lib/roughNotationHelpers";
+import { JOB_TITLE } from "../data/constants";
 
 export default function Hero() {
   const [showNotation, setShowNotation] = useState(false);
@@ -26,7 +27,7 @@ export default function Hero() {
         <h2 className="text-2xl text-slate-500 font-normal ">
           A{" "}
           <RoughNotationWrapper show={showNotation} delay={0}>
-            Frontend Developer
+            {JOB_TITLE}
           </RoughNotationWrapper>{" "}
           based in Cambridge.
         </h2>
@@ -35,7 +36,7 @@ export default function Hero() {
       {/* Description Section */}
       <section className="text-lg md:text-xl text-black max-w-2xl leading-relaxed mt-4 mb-8">
         With 4 years&apos; experience in a fast-paced startup, I specialize in
-        building scalable, high-quality applications with JavaScript, React, and
+        building scalable, high-quality applications using React Native and
         Next.js using modern tools like TanStack Query, Zustand and Tailwind
         CSS.
         <div className="mt-6">
