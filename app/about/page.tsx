@@ -100,50 +100,34 @@ export default function About() {
           <div className="space-y-6">
             <div>
               <h3 className="text-lg font-medium text-black mb-1">
-                Frontend Development
+                Frontend &amp; Mobile Development
               </h3>
               <p className="text-muted-foreground">
-                JavaScript (ES6+), TypeScript, HTML5, CSS3, Responsive Web
-                Design
+                React, React Native, Next.js, TypeScript, JavaScript
               </p>
             </div>
 
             <div>
               <h3 className="text-lg font-medium text-black mb-1">
-                Mobile Development
+                Data &amp; State Management
               </h3>
               <p className="text-muted-foreground">
-                React Native (Expo & Bare), Xcode, Android Studio, foundational
-                Java experience
+                TanStack Query, Zustand, REST APIs, WebSockets
               </p>
             </div>
 
             <div>
               <h3 className="text-lg font-medium text-black mb-1">
-                Libraries & Frameworks
+                Data Visualisation
               </h3>
-              <p className="text-muted-foreground">
-                React, React Native, Next.js, React Flow, Highcharts, shadcn/ui,
-                Vite, Tailwind
-              </p>
+              <p className="text-muted-foreground">Highcharts</p>
             </div>
 
             <div>
               <h3 className="text-lg font-medium text-black mb-1">
-                Data Fetching & State Management
+                UX &amp; Delivery
               </h3>
-              <p className="text-muted-foreground">
-                TanStack Query, Zustand, React Hook Form, REST APIs, WebSockets
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-medium text-black mb-1">
-                Testing & Tools
-              </h3>
-              <p className="text-muted-foreground">
-                Cypress, Git, Figma, Chrome DevTools, Cursor, GitHub Copilot
-              </p>
+              <p className="text-muted-foreground">Figma, Cypress, Git</p>
             </div>
           </div>
         </section>
