@@ -58,7 +58,7 @@ export default function About() {
               <p className="text-lg text-black mb-3">
                 I lead frontend architecture and technical direction for the
                 core IoT platform, shaping UX and defining patterns and
-                standards across web and mobile applications. Since 2024, I’ve
+                standards across web and mobile applications. Since 2025, I’ve
                 taken on lead responsibility for frontend technical direction,
                 defining patterns and standards and shaping the overall user
                 experience of the platform.
