@@ -34,10 +34,10 @@ export default function Hero() {
 
       {/* Description Section */}
       <section className="text-lg md:text-xl text-black max-w-2xl leading-relaxed mt-4 mb-8">
-        With 4 years&apos; experience in a fast-paced startup, I specialize in
-        building scalable, high-quality applications with React Native and
-        Next.js using modern tools like TanStack Query, Zustand and Tailwind
-        CSS.
+        With over 4 years&apos; experience building production web and mobile
+        apps in a fast-paced startup, I lead frontend architecture and UX
+        delivery—defining patterns and standards—and ship features end-to-end
+        with React, React Native, and Next.js.
         <div className="mt-6">
           <Link href="/about">
             <Button className="text-base bg-black text-white hover:bg-gray-800 cursor-pointer group">

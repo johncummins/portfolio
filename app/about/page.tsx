@@ -19,10 +19,10 @@ export default function About() {
         {/* Profile Section */}
         <section className="text-lg text-black max-w-2xl leading-relaxed mt-4 mb-8">
           <p className="mb-6">
-            {JOB_TITLE} with 4 years&apos; experience in a fast-paced startup,
-            building scalable, high-quality applications with JavaScript, React,
-            and Next.js using modern tools like TanStack Query, Zustand and
-            Tailwind CSS.
+            {JOB_TITLE} with over 4 years&apos; experience building and owning
+            scalable web and mobile applications in a fast-paced startup
+            environment. I lead frontend architecture and UX delivery using
+            React, React Native, Next.js, and TypeScript.
           </p>
 
           <p className="mb-6">
@@ -50,41 +50,42 @@ export default function About() {
           <div className="space-y-6">
             <div>
               <h3 className="text-lg font-medium text-slate-700 mb-1">
-                Frontend Engineer
+                Lead Frontend Engineer
               </h3>
               <p className="text-lg text-slate-500 mb-1">
                 cThings, Cambridge, UK (2022 - Present)
+              </p>
+              <p className="text-lg text-black mb-3">
+                I lead frontend architecture and technical direction for the
+                core IoT platform, shaping UX and defining patterns and
+                standards across web and mobile applications. Since 2024, I’ve
+                taken on lead responsibility for frontend technical direction,
+                defining patterns and standards and shaping the overall user
+                experience of the platform.
               </p>
               <ul className="space-y-2 text-lg text-black">
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
                   <span>
-                    Deliver scalable, responsive frontend solutions for the main
-                    IoT platform (1,200 active users) and other customer-led
-                    projects, using React, Next.js, and modern JavaScript.
+                    Delivered scalable, responsive frontend solutions for the
+                    main IoT platform (1,200 active users) and customer-led
+                    projects using React, Next.js, and TypeScript.
                   </span>
                 </li>
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
                   <span>
-                    Developed a React Native Android kiosk app for secure
-                    Tap-to-Pay payments using Stripe and NFC/RFID meter top-ups,
-                    supporting 6,000 service points.
+                    Built a React Native Android kiosk app for secure Tap-to-Pay
+                    payments using Stripe and NFC/RFID meter top-ups, supporting
+                    6,000 service points.
                   </span>
                 </li>
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
                   <span>
-                    Build interactive dashboards and data visualisations (React
-                    Flow, Highcharts) to monitor 146,000+ IoT devices, with a
-                    focus on writing clean, readable, and maintainable code.
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-2">•</span>
-                  <span>
-                    Mentor junior developers and define frontend best practices,
-                    improving consistency and maintainability.
+                    Built interactive dashboards and data visualisations (React
+                    Flow, Highcharts) to monitor 146,000+ IoT devices, focusing
+                    on performance, maintainability, and clarity.
                   </span>
                 </li>
               </ul>
