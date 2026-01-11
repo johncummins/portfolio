@@ -45,7 +45,7 @@ export default function ProjectDetail({
         {/* Project Image */}
         <div className="relative rounded-xl mb-8 box-shadow-project w-full overflow-hidden">
           <Image
-            alt={project.title}
+            alt={`Screenshot of ${project.title}`}
             width={1200}
             height={600}
             className="rounded-xl bg-cover w-full h-auto"

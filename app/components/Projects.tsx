@@ -18,7 +18,7 @@ export default function Projects() {
                 className="flex flex-col justify-center bg-slate-100 hover:bg-slate-200/70 transition-colors rounded-xl p-8 w-full">
                 <div className="relative rounded-xl mb-4 box-shadow-project w-full">
                   <Image
-                    alt={project.title}
+                    alt={`Screenshot of ${project.title}`}
                     width={800}
                     height={400}
                     className="rounded-xl bg-cover w-full h-auto"
