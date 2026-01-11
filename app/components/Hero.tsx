@@ -20,7 +20,6 @@ export default function Hero() {
       {/* Hero Section */}
       <header>
         <h1 className="text-4xl font-semibold tracking-tight mb-1">
-          {/* TODO: Replace with actual name */}
           Hello, I&apos;m John.
         </h1>
 
@@ -36,8 +35,8 @@ export default function Hero() {
       <section className="text-lg md:text-xl text-black max-w-2xl leading-relaxed mt-4 mb-8">
         With over 4 years&apos; experience building production web and mobile
         apps in a fast-paced startup, I lead frontend architecture and UX
-        delivery—defining patterns and standards—and ship features end-to-end
-        with React, React Native, and Next.js.
+        delivery, defining patterns and standards and shipping features
+        end-to-end with React, React Native, and Next.js.
         <div className="mt-6">
           <Link href="/about">
             <Button className="text-base bg-black text-white hover:bg-gray-800 cursor-pointer group">
