@@ -50,7 +50,7 @@ export default function About() {
           <div className="space-y-6">
             <div>
               <h3 className="text-lg font-medium text-slate-700 mb-1">
-                Senior Mobile Engineer
+                Lead Frontend Engineer
               </h3>
               <p className="text-lg text-slate-500 mb-1">
                 cThings, Cambridge, UK (2022 - Present)
